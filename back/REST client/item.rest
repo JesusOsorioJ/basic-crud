@@ -1,0 +1,30 @@
+### Consultar todos los item
+GET http://localhost:3000/api/item/
+Accept: application/json
+Content-Type: application/json
+
+
+### Crear item
+POST http://localhost:3000/api/item/
+Accept: application/json
+Content-Type: application/json
+
+{
+    "content":"mensaje guardar"
+}
+
+### Actualizar item
+PUT http://localhost:3000/api/item/6
+Accept: application/json
+Content-Type: application/json
+
+{
+    "content":"mensaje actualizar"
+}
+
+
+### Elimminar item
+DELETE http://localhost:3000/api/item/1
+Accept: application/json
+Content-Type: application/json
+
