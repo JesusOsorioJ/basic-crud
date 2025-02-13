@@ -35,9 +35,9 @@ function TableItem({ data, send, setSend, setData, setForm }: TableProps) {
   return (
     <div className="flex flex-col gap-2 items-center bg-gray-200 dark:bg-gray-800 w-full p-5 rounded-lg">
       <p className="text-[20px]">{t("registerTable")}</p>
-      <table className="w-full p-3 bg-gray-300 dark:bg-gray-900 rounded-lg">
+      <table className="w-full p-3 bg-gray-300 dark:bg-gray-900 rounded-lg text-center">
         <thead>
-          <tr>
+          <tr className="uppercase">
             <th>ID</th>
             <th>{t("message")}</th>
             <th>{t("updatedAt")}</th>
@@ -50,7 +50,7 @@ function TableItem({ data, send, setSend, setData, setForm }: TableProps) {
               <td>{d.id}</td>
               <td>{d.content}</td>
               <td>{d.updatedAt ? format(new Date(d.updatedAt), "MM/dd/yyyy pp") : "N/A"}</td>
-              <td className="flex gap-1">
+              <td className="flex gap-1 justify-center">
                 <button onClick={() => handleDelete(d.id)} className="px-1 text-[20px] rounded-br-lg rounded">
                   🗑️
                 </button>
