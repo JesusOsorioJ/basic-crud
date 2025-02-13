@@ -75,17 +75,8 @@ Con las dos terminales levantadas, podrá ver la página en la URL mostrada por 
 
 ## **Para tener en cuenta**
 
-1. Para probar los endpoints, se ha proporcionado un folder de REST Client en el directorio raíz del proyecto de backend. Deberá tener la extensión REST Client en Visual Studio Code. Si aún no la tiene instalada, puede encontrarla [aquí](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)..
+Para probar los endpoints, se ha proporcionado un folder de REST Client en el directorio raíz del proyecto de backend. Deberá tener la extensión REST Client en Visual Studio Code. Si aún no la tiene instalada, puede encontrarla [aquí](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)..
 
-2. El frontend en producción se expone en la URL: 
-```bash
-https://pocket-indol.vercel.app/
-```
-3. La documentación del backend con Swagger se encuentra en **URL del backend** + **/docs**. Para produccion:
-
-```bash
-https://pocket-q81q.onrender.com/docs/
-```
 ---
 
 ## **Próximos pasos**
