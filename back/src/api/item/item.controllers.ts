@@ -1,6 +1,5 @@
 import { Request, Response, NextFunction } from "express";
 import * as service from "./item.services";
-import { Server } from "socket.io";
 
 export const getAllItem = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
@@ -11,7 +10,7 @@ export const getAllItem = async (req: Request, res: Response, next: NextFunction
   }
 };
 
-export const newItem = async (req: Request & { io: Server }, res: Response, next: NextFunction): Promise<void> => {
+export const newItem = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
     const { content } = req.body;
 
@@ -24,7 +23,7 @@ export const newItem = async (req: Request & { io: Server }, res: Response, next
   }
 };
 
-export const updateItem = async (req: Request & { io: Server }, res: Response, next: NextFunction): Promise<void> => {
+export const updateItem = async (req: Request, res: Response, next: NextFunction): Promise<void> => {
   try {
     const { content } = req.body;
     const { id } = req.params;

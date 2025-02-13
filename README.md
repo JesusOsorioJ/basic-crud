@@ -1,4 +1,4 @@
-# Aplicación de Chat con React, Socket.IO y TypeScript
+# Aplicación de CRUD
 
 Este proyecto es una aplicación de CRUD sencillo con React, TypeScript. Proporciona un CRUD con integración con backend construido en Node.js y Express.
 
@@ -11,13 +11,11 @@ Este proyecto es una aplicación de CRUD sencillo con React, TypeScript. Proporc
 - TypeScript  
 - Tailwind CSS
 - i18next (para la traducción)
-- Socket.IO Client
 
 ### **Backend:**
 - Node.js
 - Express
 - Prisma (ORM para manejar la base de datos de mysql)
-- Socket.IO Server
 - Swagger (Documentación de API)
 
 ---
